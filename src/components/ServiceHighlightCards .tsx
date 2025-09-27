@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const ServiceHighlightCards = () => {
@@ -16,8 +15,7 @@ const ServiceHighlightCards = () => {
       buttonText: "Learn More",
       buttonColor: "#2BADEE",
       titleColor: "#2BADEE",
-      backgroundImage:
-        "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDMwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRjVGN0ZBIi8+CjxyZWN0IHg9IjQwIiB5PSI2MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMkJBREVFIiBvcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iODAiIHI9IjE1IiBmaWxsPSIjRkY2QkI1IiBvcGFjaXR5PSIwLjQiLz4KPHJlY3QgeD0iMTUwIiB5PSI3MCIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiBmaWxsPSIjRkY5NTAwIiBvcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iMjAwIiBjeT0iNjAiIHI9IjEwIiBmaWxsPSIjMkJBREVFIiBvcGFjaXR5PSIwLjQiLz4KPC9zdmc+",
+      backgroundImage: "./childCare.jpg",
     },
     {
       id: 2,
@@ -33,7 +31,7 @@ const ServiceHighlightCards = () => {
       buttonColor: "#F9C31F",
       titleColor: "#F9C31F",
       backgroundImage:
-        "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDMwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkNGQ0ZBIi8+CjxwYXRoIGQ9Ik01MCA5MEM1MCA4MCA2MCA3MCA3MCA3MEM4MCA3MCA5MCA4MCA5MCA5MEM5MCAxMDAgODAgMTEwIDcwIDExMEM2MCAxMTAgNTAgMTAwIDUwIDkwWiIgZmlsbD0iI0Y5QzMxRiIgb3BhY2l0eT0iMC4zIi8+CjxyZWN0IHg9IjEyMCIgeT0iNTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzJFQjhBMSIgb3BhY2l0eT0iMC4yIi8+CjxjaXJjbGUgY3g9IjIyMCIgY3k9Ijg1IiByPSIyMCIgZmlsbD0iI0Y5QzMxRiIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPg==",
+        "./adultCare.jpg",
     },
     {
       id: 3,
@@ -49,7 +47,7 @@ const ServiceHighlightCards = () => {
       buttonColor: "#2EB8A1",
       titleColor: "#2EB8A1",
       backgroundImage:
-        "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDMwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkFGQ0ZCIi8+CjxyZWN0IHg9IjYwIiB5PSI0MCIgd2lkdGg9IjM1IiBoZWlnaHQ9IjcwIiBmaWxsPSIjMkVCOEExIiBvcGFjaXR5PSIwLjI1Ii8+CjxjaXJjbGUgY3g9IjE2MCIgY3k9IjkwIiByPSIyNSIgZmlsbD0iIzZFOEY1NiIgb3BhY2l0eT0iMC4yIi8+CjxyZWN0IHg9IjIyMCIgeT0iNjAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgZmlsbD0iIzJFQjhBMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPg==",
+        "./support.jpg",
     },
   ];
 
@@ -64,7 +62,7 @@ const ServiceHighlightCards = () => {
             >
               {/* Background Image Header */}
               <div
-                className="h-32 bg-cover bg-center"
+                className="h-[200px] bg-cover bg-center"
                 style={{ backgroundImage: `url(${service.backgroundImage})` }}
               ></div>
 
