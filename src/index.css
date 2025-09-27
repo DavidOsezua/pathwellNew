@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@utility sectionContainer {
+  @layer components {
+    @apply max-w-[1200px] mx-auto;
+  }
+}
