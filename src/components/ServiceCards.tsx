@@ -1,5 +1,5 @@
-
 import { Users, Heart, Stethoscope, ArrowRight } from "lucide-react";
+import { NavLink } from "react-router";
 
 const ServiceCards = () => {
   const servicesData = [
@@ -7,6 +7,7 @@ const ServiceCards = () => {
       id: 1,
       logo: "PathWell Child",
       icon: Users,
+      path: "/childcare",
       image: "./child.jpg",
       iconColor: "text-blue-500",
       title: "Child Care",
@@ -30,6 +31,7 @@ const ServiceCards = () => {
       id: 2,
       logo: "PathWell Supported Living",
       icon: Heart,
+      path: "/supportedliving",
       image: "./supportedLiving.jpg",
       iconColor: "text-yellow-500",
       title: "Supported Living",
@@ -53,6 +55,7 @@ const ServiceCards = () => {
       id: 3,
       logo: "PathWell Adult",
       icon: Stethoscope,
+      path: "/adultcare",
       image: "./adult.jpg",
       iconColor: "text-teal-500",
       title: "Adult Care",
@@ -92,7 +95,11 @@ const ServiceCards = () => {
               >
                 {/* Logo Circle */}
                 <div className="flex justify-center mb-8">
-                  <img src={service.image} alt="" className="w-[128px] h-[128px] rounded-full " />
+                  <img
+                    src={service.image}
+                    alt=""
+                    className="w-[128px] h-[128px] rounded-full "
+                  />
                 </div>
 
                 {/* Title with Icon */}
@@ -123,13 +130,14 @@ const ServiceCards = () => {
                 </ul>
 
                 {/* Learn More Button */}
-                <button
+                <NavLink
+                  to={service.path}
                   className="w-full text-white py-1 px-6 rounded-md font-semibold flex items-center justify-center transition-all duration-300 group hover:opacity-90"
                   style={{ backgroundColor: service.buttonColor }}
                 >
                   {service.buttonText}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
+                </NavLink>
               </div>
             );
           })}

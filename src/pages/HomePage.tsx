@@ -15,7 +15,7 @@ const HomePage = () => {
           subheading={
             "Support that feels like home - for children, spa adults, and supported living."
           }
-          imageUrl={"./home.png"}
+          imageUrl={"./home.jpg"}
           title={""}
           features1={"CIC Compliant"}
           features2={"Regulatory Oversight"}
@@ -34,9 +34,18 @@ const HomePage = () => {
             "Safe, supportive living rooted in recovery, dignity, and community."
           }
           title={"Our Approach"}
+          bgColor="bg-[#6E8F561A]"
+          textColor="text-[#6E8F56]"
         />
         <TestimonialBlock />
-        <GetInTouch />
+        <GetInTouch
+          buttonText={"Make a Referral"}
+          buttonText2={"Request Information"}
+          bgColor={"bg-[#6E8F56]"}
+          bgTransparent={"bg-[#6E8F561A]"}
+          borderColor={"border-[#6E8F564D]"}
+          textColor={"text-[#6E8F56]"}
+        />
       </main>
     </>
   );

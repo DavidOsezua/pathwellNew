@@ -1,6 +1,22 @@
 import { Phone } from "lucide-react";
 
-const GetInTouch = () => {
+interface GetInTouchProps {
+  buttonText: string;
+  buttonText2?: string;
+  bgColor: string;
+  bgTransparent: string;
+  borderColor: string;
+  textColor: string;
+}
+
+const GetInTouch = ({
+  buttonText,
+  buttonText2,
+  bgColor,
+  bgTransparent,
+  borderColor,
+  textColor,
+}: GetInTouchProps) => {
   return (
     <div className="relative min-h-96 rounded-2xl overflow-hidden mx-4 my-8 max-w-[800px] lg:mx-auto">
       {/* Background Image */}
@@ -29,9 +45,11 @@ const GetInTouch = () => {
 
         {/* Phone Number */}
         <div className="flex items-center justify-center ">
-          <div className="flex items-center bg-[#5F5F5F2E] border border-[#6E8F564D]  py-4 px-6 backdrop-blur-md rounded-xl">
-            <Phone className="w-6 h-6 text-[#6E8F56] mr-3" />
-            <span className="text-[#6E8F56] text-2xl font-semibold">
+          <div
+            className={`flex rounded-lg items-center border ${bgTransparent} ${borderColor}  py-4 px-6 backdrop-blur-md rounded-xl"`}
+          >
+            <Phone className={`w-6 h-6 ${textColor} mr-3`} />
+            <span className={`${textColor}  text-2xl font-semibold`}>
               07438 800 134
             </span>
           </div>
@@ -39,12 +57,16 @@ const GetInTouch = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row sm:justify-center gap-4 w-full">
-          <button className="bg-[#6E8F56]   hover:bg-[#6E8F56] text-white px-4 py-2  rounded-lg font-semibold transition-colors duration-300">
-            Make a Referral
+          <button
+            className={`${bgColor} text-white px-4 py-2  rounded-lg font-semibold transition-colors duration-300`}
+          >
+            {buttonText}
           </button>
-          <button className="bg-white  text-[#6E8F56] bg-opacity-20 hover:bg-opacity-30  px-4 py-2 rounded-lg font-semibold backdrop-blur-sm border border-white border-opacity-30 transition-all duration-300">
-            Request Information
-          </button>
+          {buttonText2 && (
+            <button className="bg-white  text-[#6E8F56] bg-opacity-20 hover:bg-opacity-30  px-4 py-2 rounded-lg font-semibold backdrop-blur-sm border border-white border-opacity-30 transition-all duration-300">
+              {buttonText2}
+            </button>
+          )}
         </div>
       </div>
     </div>

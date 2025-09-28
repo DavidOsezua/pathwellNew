@@ -9,7 +9,12 @@ import { additionalServicesData } from "../data/data";
 const ServicePage = () => {
   return (
     <>
-      <BackToHome />
+      <BackToHome
+        title={"Back to Home"}
+        path={"/"}
+        arrowColor={"#6E8F56"}
+        titleColor={"text-[#6E8F56]"}
+      />
       <main>
         <HeroComponent
           subheading={"Comprehensive Care Solutions for Vulnerable Individuals"}
@@ -29,10 +34,19 @@ const ServicePage = () => {
         <ThreeColumnGrid
           data={additionalServicesData}
           subtitle={""}
-          title={''}
+          title={""}
+          bgColor="bg-[#6E8F561A]"
+          textColor="text-[#6E8F56]"
         />
         <WhoWeServeSection />
-        <GetInTouch />
+        <GetInTouch
+          buttonText={"Make a Referral"}
+          buttonText2={"Request Information"}
+          bgColor={"bg-[#6E8F56]"}
+          bgTransparent={"bg-[#6E8F561A]"}
+          borderColor={"border-[#6E8F564D]"}
+          textColor={"text-[#6E8F56]"}
+        />
       </main>
     </>
   );

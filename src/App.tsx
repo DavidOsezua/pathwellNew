@@ -7,6 +7,9 @@ import AboutPage from "./pages/AboutPage.tsx";
 import CareersPage from "./pages/CareersPage.tsx";
 import GovernancePage from "./pages/GovernancePage.tsx";
 import ServicePage from "./pages/ServicePage.tsx";
+import AdultCare from "./pages/AdultCare.tsx";
+import ChildCarePage from "./pages/ChildCarePage.tsx";
+import SupportedLivingPage from "./pages/SupportedLivingPage.tsx";
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
         <Route path="careers" element={<CareersPage />} />
         <Route path="governance" element={<GovernancePage />} />
         <Route path="service" element={<ServicePage />} />
+        <Route path="adultcare" element={<AdultCare />} />
+        <Route path="childcare" element={<ChildCarePage />} />
+        <Route path="supportedliving" element={<SupportedLivingPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

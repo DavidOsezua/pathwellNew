@@ -10,7 +10,12 @@ import { gridData, values } from "../data/data";
 const AboutPage = () => {
   return (
     <>
-      <BackToHome />
+      <BackToHome
+        title={"Back to Home"}
+        path={"/"}
+        arrowColor={"#6E8F56"}
+        titleColor={"text-[#6E8F56]"}
+      />
       <main>
         <HeroComponent
           subheading={"Trusted Housing-Based Support"}
@@ -32,9 +37,18 @@ const AboutPage = () => {
           data={values}
           subtitle={"The principles that guide everything we do"}
           title={"Our Values"}
+          bgColor="bg-[#6E8F561A]"
+          textColor="text-[#6E8F56]"
         />
         <WhyChooseSection />
-        <GetInTouch />
+        <GetInTouch
+          buttonText={"Make a Referral"}
+          buttonText2={"Request Information"}
+          bgColor={"bg-[#6E8F56]"}
+          bgTransparent={"bg-[#6E8F561A]"}
+          borderColor={"border-[#6E8F564D]"}
+          textColor={"text-[#6E8F56]"}
+        />
       </main>
     </>
   );

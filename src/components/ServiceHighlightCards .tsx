@@ -1,10 +1,12 @@
 import { ArrowRight } from "lucide-react";
+import { NavLink } from "react-router";
 
 const ServiceHighlightCards = () => {
   const servicesData = [
     {
       id: 1,
       title: "Child Care Placement Services",
+      path: "/childcare",
       subtitle:
         "Council placement services for children in care, including foster family placements, children's homes, and specialized care proceedings support.",
       keyFeatures: [
@@ -20,6 +22,7 @@ const ServiceHighlightCards = () => {
     {
       id: 2,
       title: "Supported Living Services",
+      path: "/supportedliving",
       subtitle:
         "Safe, structured supported living for adults with complex mental health needs transitioning from secure or clinical settings.",
       keyFeatures: [
@@ -30,12 +33,12 @@ const ServiceHighlightCards = () => {
       buttonText: "Learn More",
       buttonColor: "#F9C31F",
       titleColor: "#F9C31F",
-      backgroundImage:
-        "./adultCare.jpg",
+      backgroundImage: "./adultCare.jpg",
     },
     {
       id: 3,
       title: "Adult Home Care Services",
+      path: "/adultcare",
       subtitle:
         "Comprehensive home care services including personal care, live-in support, dementia care, and 24/7 assistance in your own home.",
       keyFeatures: [
@@ -46,14 +49,13 @@ const ServiceHighlightCards = () => {
       buttonText: "Learn More",
       buttonColor: "#2EB8A1",
       titleColor: "#2EB8A1",
-      backgroundImage:
-        "./support.jpg",
+      backgroundImage: "./support.jpg",
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-[1154px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service) => (
             <div
@@ -102,13 +104,14 @@ const ServiceHighlightCards = () => {
                 </div>
 
                 {/* Learn More Button */}
-                <button
+                <NavLink
+                  to={service.path}
                   className="w-full text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center transition-all duration-300 group hover:opacity-90"
                   style={{ backgroundColor: service.buttonColor }}
                 >
                   {service.buttonText}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
+                </NavLink>
               </div>
             </div>
           ))}

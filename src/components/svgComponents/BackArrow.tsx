@@ -1,4 +1,8 @@
-const BackArrow = () => {
+interface BackArrowProps {
+  strokeColor: string;
+}
+
+const BackArrow = ({ strokeColor }: BackArrowProps) => {
   return (
     <div>
       <svg
@@ -10,14 +14,14 @@ const BackArrow = () => {
       >
         <path
           d="M8.00065 12.6666L3.33398 7.99992L8.00065 3.33325"
-          stroke="#6E8F56"
+          stroke={strokeColor}
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M12.6673 8H3.33398"
-          stroke="#6E8F56"
+          stroke={strokeColor}
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"

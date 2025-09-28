@@ -58,12 +58,16 @@ interface ThreeColumnGridProps {
   data: ValueItem[];
   subtitle: string;
   title: string;
+  textColor: string;
+  bgColor: string;
 }
 
 const ThreeColumnGrid: React.FC<ThreeColumnGridProps> = ({
   data,
   subtitle,
   title,
+  bgColor = "bg-[#6E8F561A]",
+  textColor = "text-[#6E8F56]",
 }) => {
   return (
     <section className="bg-[#6E8F561A] py-16 md:py-20">
@@ -86,8 +90,10 @@ const ThreeColumnGrid: React.FC<ThreeColumnGridProps> = ({
               >
                 {/* Icon */}
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center">
-                    <IconComponent className="w-6 h-6 text-[#6E8F56]" />
+                  <div
+                    className={`w-16 h-16  rounded-full flex items-center justify-center ${bgColor}`}
+                  >
+                    <IconComponent className={` ${textColor} w-6 h-6  `} />
                   </div>
                 </div>
 

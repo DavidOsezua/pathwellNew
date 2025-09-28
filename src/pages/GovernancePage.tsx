@@ -10,7 +10,12 @@ import { governanceFrameworkData, governanceGridData } from "../data/data";
 const GovernancePage = () => {
   return (
     <>
-      <BackToHome />
+      <BackToHome
+        title={"Back to Home"}
+        path={"/"}
+        arrowColor={"#6E8F56"}
+        titleColor={"text-[#6E8F56]"}
+      />
       <main>
         <HeroComponent
           subheading={"Transparency, Accountability & Excellence"}
@@ -33,10 +38,19 @@ const GovernancePage = () => {
             "Comprehensive oversight across all aspects of our operations"
           }
           title={"Governance Framework"}
+          bgColor="bg-[#6E8F561A]"
+          textColor="text-[#6E8F56]"
         />
         <RegulatoryComplianceSection />
         <QualityAssuranceSection />
-        <GetInTouch />
+        <GetInTouch
+          buttonText={"Make a Referral"}
+          buttonText2={"Request Information"}
+          bgColor={"bg-[#6E8F56]"}
+          bgTransparent={"bg-[#6E8F561A]"}
+          borderColor={"border-[#6E8F564D]"}
+          textColor={"text-[#6E8F56]"}
+        />
       </main>
     </>
   );

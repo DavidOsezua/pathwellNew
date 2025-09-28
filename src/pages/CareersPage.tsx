@@ -1,16 +1,25 @@
-import ApplicationProcess from "../components/ApplicationProcess";
 import BackToHome from "../components/BackToHome";
 import CareerOpportunitiesSection from "../components/CareerOpportunitiesSection ";
 import GetInTouch from "../components/GetInTouch";
 import HeroComponent from "../components/HeroComponent";
+import ProcessFlow from "../components/ProcessFlow";
 import ThreeColumnGrid from "../components/ThreeColumnGrid";
 import TwoColumnGrid from "../components/TwoColumnGrid";
-import { benefitsPerksData, careerGridData } from "../data/data";
+import {
+  applicationSteps,
+  benefitsPerksData,
+  careerGridData,
+} from "../data/data";
 
 const CareersPage = () => {
   return (
     <>
-      <BackToHome />
+      <BackToHome
+        title={"Back to Home"}
+        path={"/"}
+        arrowColor={"#6E8F56"}
+        titleColor={"text-[#6E8F56]"}
+      />
       <main>
         <HeroComponent
           subheading={"Join Our Mission to Transform Lives"}
@@ -34,9 +43,25 @@ const CareersPage = () => {
             "Comprehensive benefits supporting your professional and personal well-beings"
           }
           title={"Benefits & Perks"}
+          bgColor="bg-[#6E8F561A]"
+          textColor="text-[#6E8F56]"
         />
-        <ApplicationProcess />
-        <GetInTouch />
+        {/* <ApplicationProcess /> */}
+
+        <ProcessFlow
+          title={"Application Process"}
+          subtitle={"Simple steps to join our team"}
+          steps={applicationSteps}
+          themeColor={"#6E8F56"}
+        />
+        <GetInTouch
+          buttonText={"Make a Referral"}
+          buttonText2={"Request Information"}
+          bgColor={"bg-[#6E8F56]"}
+          bgTransparent={"bg-[#6E8F561A]"}
+          borderColor={"border-[#6E8F564D]"}
+          textColor={"text-[#6E8F56]"}
+        />
       </main>
     </>
   );
