@@ -1,3 +1,4 @@
+import { ChartBar, Eye, Lock } from "lucide-react";
 import GetInTouch from "../components/GetInTouch";
 import HeroComponent from "../components/HeroComponent";
 import Navbar2 from "../components/Navbar2";
@@ -18,11 +19,14 @@ const HomePage = () => {
           imageUrl={"./home.jpg"}
           title={""}
           features1={"CIC Compliant"}
+          subFeature1="Community at core"
+          icon1={<Lock className={`w-4 h-4 text-[#2BADEE] rounded-full`} />}
           features2={"Regulatory Oversight"}
+          icon2={<Eye className={`w-4 h-4 text-[#F9C31F] `} />}
+          subFeature2="Safe and accountable"
           features3={"Transparent Reporting"}
-          featureColor1={"bg-[#2BADEE]"}
-          featureColor2={"bg-[#F9C31F]"}
-          featureColor3={"bg-[#2EB8A1]"}
+          subFeature3="Clarity for families"
+          icon3={<ChartBar className={`w-4 h-4 text-[#2EB8A1] rounded-full`} />}
           subheading2={
             "At PathWell, we stand beside people at every stage of life, offering stability, independence, and hope for brighter futures."
           }

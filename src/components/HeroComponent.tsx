@@ -1,11 +1,19 @@
+import type { ReactNode } from "react";
+
 interface HeroComponentProps {
   title: string;
   features1: string;
   features2: string;
   features3: string;
-  featureColor1: string;
-  featureColor2: string;
-  featureColor3: string;
+  featureColor1?: string;
+  featureColor2?: string;
+  featureColor3?: string;
+  icon1?: ReactNode;
+  icon2?: ReactNode;
+  icon3?: ReactNode;
+  subFeature1?: string;
+  subFeature2?: string;
+  subFeature3?: string;
   subheading: string;
   subheading2: string;
   imageUrl: string;
@@ -17,6 +25,12 @@ const HeroComponent = ({
   featureColor1,
   featureColor2,
   featureColor3,
+  icon1,
+  icon2,
+  icon3,
+  subFeature1,
+  subFeature2,
+  subFeature3,
   features1,
   features2,
   features3,
@@ -56,22 +70,47 @@ const HeroComponent = ({
           {/* Features */}
           <div className="flex  items-center justify-center  gap-4">
             <div className="flex items-center space-x-2">
-              <div className={`w-2 h-2 ${featureColor1} rounded-full`}></div>
-              <span className="text-[10px] sm:text-sm font-light">
-                {features1}
-              </span>
+              {featureColor1 && (
+                <div className={`w-2 h-2 ${featureColor1} rounded-full`}></div>
+              )}
+              {icon1}
+              <div className="flex flex-col text-left ">
+                <span className="text-[10px] sm:text-[13px] font-semibold">
+                  {features1}
+                </span>
+                <span className="text-[10px] sm:text-[13px] font-light">
+                  {subFeature1}
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center space-x-1">
+              {featureColor2 && (
+                <div className={`w-2 h-2 ${featureColor2} rounded-full`}></div>
+              )}
+              {icon2}
+
+              <div className="flex flex-col text-left ">
+                <span className="text-[10px] sm:text-[13px] font-semibold">
+                  {features2}
+                </span>
+                <span className="text-[10px] sm:text-[13px] font-light">
+                  {subFeature2}
+                </span>
+              </div>
             </div>
             <div className="flex items-center space-x-2">
-              <div className={`w-2 h-2 ${featureColor2} rounded-full`}></div>
-              <span className="text-[10px] sm:text-[13px] font-light">
-                {features2}
-              </span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className={`w-2 h-2 ${featureColor3} rounded-full`}></div>
-              <span className="text-[10px] sm:text-[13px] font-light">
-                {features3}
-              </span>
+              {featureColor3 && (
+                <div className={`w-2 h-2 ${featureColor3} rounded-full`}></div>
+              )}
+              {icon3}
+              <div className="flex flex-col text-left ">
+                <span className="text-[10px] sm:text-[13px] font-semibold">
+                  {features3}
+                </span>
+                <span className="text-[10px] sm:text-[13px] font-light">
+                  {subFeature3}
+                </span>
+              </div>
             </div>
           </div>
         </div>
