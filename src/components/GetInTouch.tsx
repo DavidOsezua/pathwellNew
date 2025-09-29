@@ -17,6 +17,9 @@ const GetInTouch = ({
   borderColor,
   textColor,
 }: GetInTouchProps) => {
+  const handleClick = () => {
+    window.location.href = "mailto:info@pathwellgroup.com";
+  };
   return (
     <div className="relative min-h-96 rounded-2xl overflow-hidden mx-4 my-8 max-w-[800px] lg:mx-auto">
       {/* Background Image */}
@@ -63,7 +66,10 @@ const GetInTouch = ({
             {buttonText}
           </button>
           {buttonText2 && (
-            <button className="bg-white  text-[#6E8F56] bg-opacity-20 hover:bg-opacity-30  px-4 py-2 rounded-lg font-semibold backdrop-blur-sm border border-white border-opacity-30 transition-all duration-300">
+            <button
+              onClick={handleClick}
+              className="bg-white cursor-pointer text-[#6E8F56] bg-opacity-20 hover:bg-opacity-30  px-4 py-2 rounded-lg font-semibold backdrop-blur-sm border border-white border-opacity-30 transition-all duration-300"
+            >
               {buttonText2}
             </button>
           )}
