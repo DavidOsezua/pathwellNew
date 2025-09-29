@@ -28,7 +28,7 @@ const HomePage = () => {
           subFeature3="Clarity for families"
           icon3={<ChartBar className={`w-4 h-4 text-[#2EB8A1] rounded-full`} />}
           subheading2={
-            "At PathWell, we welcome people from all walks of life. Our mission is to provide safe, structured, and compassionate support that empowers independence, dignity, and brighter futures."
+            "Safe, compassionate care and support that empowers dignity, independence, and brighter futures"
           }
         />
         <ServiceCards />
