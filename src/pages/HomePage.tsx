@@ -14,7 +14,7 @@ const HomePage = () => {
       <main>
         <HeroComponent
           subheading={
-            "Support that feels like home - for children, spa adults, and supported living."
+            "Support for Every Life Stage – Children, Adults, and Supported Living"
           }
           imageUrl={"./home.jpg"}
           title={""}
@@ -28,7 +28,7 @@ const HomePage = () => {
           subFeature3="Clarity for families"
           icon3={<ChartBar className={`w-4 h-4 text-[#2EB8A1] rounded-full`} />}
           subheading2={
-            "At PathWell, we stand beside people at every stage of life, offering stability, independence, and hope for brighter futures."
+            "At PathWell, we welcome people from all walks of life. Our mission is to provide safe, structured, and compassionate support that empowers independence, dignity, and brighter futures."
           }
         />
         <ServiceCards />
