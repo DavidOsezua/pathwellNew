@@ -20,9 +20,9 @@ const HomePage = () => {
           features1={"CIC Compliant"}
           features2={"Regulatory Oversight"}
           features3={"Transparent Reporting"}
-          featureColor1={"bg-white"}
-          featureColor2={"bg-white"}
-          featureColor3={"bg-white"}
+          featureColor1={"bg-[#2BADEE]"}
+          featureColor2={"bg-[#F9C31F]"}
+          featureColor3={"bg-[#2EB8A1]"}
           subheading2={
             "At PathWell, we stand beside people at every stage of life, offering stability, independence, and hope for brighter futures."
           }

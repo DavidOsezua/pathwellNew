@@ -18,17 +18,17 @@ const GovernancePage = () => {
       />
       <main>
         <HeroComponent
-          subheading={"Transparency, Accountability & Excellence"}
+          subheading={"Governance Built on Transparency & Trust"}
           imageUrl={"./governance.jpg"}
           title={"Governance"}
           features1={"CIC Compliant"}
           features2={"Regulatory Oversight"}
           features3={"Transparent Reporting"}
-          featureColor1={"bg-white"}
-          featureColor2={"bg-white"}
-          featureColor3={"bg-white"}
+          featureColor1={"bg-[#2BADEE]"}
+          featureColor2={"bg-[#F9C31F]"}
+          featureColor3={"bg-[#2EB8A1]"}
           subheading2={
-            "As a Community Interest Company, PathWell Group maintains the highest standards of governance, regulatory compliance, and transparency in all our operations."
+            "As a Community Interest Company, PathWell upholds the highest standards of governance, compliance, and accountability - ensuring every action we take is clear, ethical, and in the best interests of the people we support."
           }
         />
         <TwoColumnGrid gridData={governanceGridData} />

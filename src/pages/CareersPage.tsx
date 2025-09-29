@@ -22,7 +22,9 @@ const CareersPage = () => {
       />
       <main>
         <HeroComponent
-          subheading={"Join Our Mission to Transform Lives"}
+          subheading={
+            "Careers at PathWell: Be Part of a Diverse, Supportive Team"
+          }
           imageUrl={"./careers.jpg"}
           title={"Careers"}
           features1={"Meaningful Work"}
@@ -32,7 +34,7 @@ const CareersPage = () => {
           featureColor2={"bg-[#6E8F56]"}
           featureColor3={"bg-[#6E8F56]"}
           subheading2={
-            "Build a rewarding career with PathWell Group, where every day offers the opportunity to make a meaningful difference in the lives of vulnerable individuals and families."
+            "Every day at PathWell is an opportunity to make a difference. Join a team where your work creates meaningful impact, your career can grow, and you’ll always be supported by colleagues who share the same mission: transforming lives."
           }
         />
         <TwoColumnGrid gridData={careerGridData} />
