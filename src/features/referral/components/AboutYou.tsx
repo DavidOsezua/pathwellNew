@@ -16,18 +16,20 @@ const AboutYou = () => {
         placeholder="Banaba-Fati"
       />
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="flex flex-col gap-4 md:flex-row items-center flex-1">
         <Input
           label="Email"
           field="email"
           type="email"
           placeholder="chelchi@example.com"
+          className="w-full"
         />
         <Input
           label="Phone Number"
           field="phone"
           type="tel"
           placeholder="+61 322 3444 5555"
+          className="w-full"
         />
       </div>
     </div>

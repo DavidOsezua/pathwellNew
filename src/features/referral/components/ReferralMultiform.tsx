@@ -12,8 +12,8 @@ const ReferralMultiform = () => {
 
   return (
     <MultistepFormProvider steps={steps} stepNames={stepNames}>
-      <div className="min-h-screen bg-gray-50">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+      <div className="min-h-screen bg-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:min-h-screen">
           {/* Left Side - Image */}
           <div className="hidden lg:block relative">
             <img
@@ -25,7 +25,7 @@ const ReferralMultiform = () => {
           </div>
 
           {/* Right Side - Form */}
-          <div className="flex items-center justify-center p-6 lg:p-12">
+          <div className="flex items-center justify-center p-4 lg:p-12">
             <div className="w-full max-w-xl">
               <h1 className="text-2xl font-bold mb-6 text-gray-800">
                 Referral Form

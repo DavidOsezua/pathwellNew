@@ -26,7 +26,7 @@ export const Input: React.FC<InputProps> = ({
           updateFormData(field, e.target.value)
         }
         placeholder={placeholder}
-        className={`w-full p-2 border rounded bg-gray-50 focus:outline-none focus:ring-2 transition-colors ${
+        className={`w-full p-2 bg-[#F5F5F5] rounded  focus:outline-none focus:ring-2 transition-colors ${
           errors[field]
             ? "border-red-500 focus:ring-red-200"
             : "border-gray-300 focus:ring-[#6E8F56]/20"
