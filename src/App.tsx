@@ -10,6 +10,7 @@ import ServicePage from "./pages/ServicePage.tsx";
 import AdultCare from "./pages/AdultCare.tsx";
 import ChildCarePage from "./pages/ChildCarePage.tsx";
 import SupportedLivingPage from "./pages/SupportedLivingPage.tsx";
+import ReferralFormPage from "./pages/ReferralFormPage.tsx";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="adultcare" element={<AdultCare />} />
         <Route path="childcare" element={<ChildCarePage />} />
         <Route path="supportedliving" element={<SupportedLivingPage />} />
+        <Route path="referral" element={<ReferralFormPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

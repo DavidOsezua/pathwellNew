@@ -63,7 +63,7 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
               <Phone /> 07438 800 134
             </p>
             <NavLink
-              to="/careers"
+              to="/referral"
               className="px-2 py-1 w-full  flex justify-center rounded-lg text-[#00334D] border-[1px] border-[#00334D]  transition-colors text-sm"
             >
               Refer a Client

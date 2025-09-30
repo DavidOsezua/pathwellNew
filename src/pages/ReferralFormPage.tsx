@@ -1,9 +1,7 @@
-import React from 'react'
+import ReferralMultiform from "../features/referral/components/ReferralMultiform";
 
 const ReferralFormPage = () => {
-  return (
-    <div>ReferralFormPage</div>
-  )
-}
+  return <ReferralMultiform />;
+};
 
-export default ReferralFormPage
+export default ReferralFormPage;
