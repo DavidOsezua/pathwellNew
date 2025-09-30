@@ -31,7 +31,6 @@ const AboutPage = () => {
           features3={"Transparent Reporting"}
           subFeature3="Clarity for families"
           icon3={<ChartBar className={`w-4 h-4 text-[#2EB8A1] rounded-full`} />}
-        
           subheading2={
             "PathWell was created to meet the growing need for supported living services in Southwark, Lambeth, and Lewisham. We saw that many people leaving hospital or struggling with mental health challenges needed more than a place to stay"
           }
@@ -47,7 +46,7 @@ const AboutPage = () => {
         />
         <WhyChooseSection />
         <GetInTouch
-          buttonText={"Make a Referral"}
+          buttonText3=""
           buttonText2={"Request Information"}
           bgColor={"bg-[#6E8F56]"}
           bgTransparent={"bg-[#6E8F561A]"}

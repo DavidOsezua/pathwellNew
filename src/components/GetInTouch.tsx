@@ -1,8 +1,10 @@
 import { Phone } from "lucide-react";
+import { NavLink } from "react-router";
 
 interface GetInTouchProps {
-  buttonText: string;
+  buttonText?: string;
   buttonText2?: string;
+  buttonText3?: string;
   bgColor: string;
   bgTransparent: string;
   borderColor: string;
@@ -12,6 +14,7 @@ interface GetInTouchProps {
 const GetInTouch = ({
   buttonText,
   buttonText2,
+  buttonText3,
   bgColor,
   bgTransparent,
   borderColor,
@@ -60,11 +63,21 @@ const GetInTouch = ({
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row sm:justify-center gap-4 w-full">
-          <button
-            className={`${bgColor} text-white px-4 py-2  rounded-lg font-semibold transition-colors duration-300`}
-          >
-            {buttonText}
-          </button>
+          {buttonText3 && (
+            <NavLink
+              to="/referral"
+              className={`${bgColor} text-white px-4 py-2  rounded-lg font-semibold transition-colors duration-300`}
+            >
+              Make a Referral
+            </NavLink>
+          )}
+          {buttonText && (
+            <button
+              className={`${bgColor} text-white px-4 py-2  rounded-lg font-semibold transition-colors duration-300`}
+            >
+              {buttonText}
+            </button>
+          )}
           {buttonText2 && (
             <button
               onClick={handleClick}

@@ -57,7 +57,7 @@ const CareersPage = () => {
           themeColor={"#6E8F56"}
         />
         <GetInTouch
-          buttonText={"Make a Referral"}
+          buttonText3=""
           buttonText2={"Request Information"}
           bgColor={"bg-[#6E8F56]"}
           bgTransparent={"bg-[#6E8F561A]"}
