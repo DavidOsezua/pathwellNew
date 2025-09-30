@@ -1,7 +1,7 @@
 import { useMultistepForm } from "../context/MultistepContext";
 
 export const ProgressIndicator: React.FC = () => {
-  const { currentStep, totalSteps, stepNames } = useMultistepForm();
+  const { currentStep, totalSteps } = useMultistepForm();
 
   return (
     <div className="mb-6">
