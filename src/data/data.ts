@@ -246,7 +246,7 @@ export const benefitsPerksData = [
     icon: TrendingUp,
     title: "Career Progression",
     description:
-      "Clear pathways for advancement and professional growth within the organization.",
+      "Clear pathways for advancement and professional growth within the organisation.",
   },
 ];
 
@@ -362,7 +362,7 @@ export const careerGridData = [
       {
         heading: "What Makes Us Different:",
         items: [
-          "Mission-driven organization with social purpose",
+          "Mission-driven organisation with social purpose",
           "Commitment to staff development & training",
           "Supportive, collaborative work environment",
           "Opportunity to make a real difference",

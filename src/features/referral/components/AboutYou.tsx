@@ -11,8 +11,8 @@ const AboutYou = () => {
       <Input label="Full Name" field="fullName" placeholder="Chelsea Yacch" />
 
       <Input
-        label="Organization / Agency (Optional)"
-        field="organization"
+        label="Organisation / Agency (Optional)"
+        field="organisation"
         placeholder="Banaba-Fati"
       />
 
@@ -28,7 +28,7 @@ const AboutYou = () => {
           label="Phone Number"
           field="phone"
           type="tel"
-          placeholder="+61 322 3444 5555"
+          placeholder="+44 322 3444 5555"
           className="w-full"
         />
       </div>
