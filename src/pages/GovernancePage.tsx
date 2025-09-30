@@ -48,7 +48,7 @@ const GovernancePage = () => {
         <RegulatoryComplianceSection />
         <QualityAssuranceSection />
         <GetInTouch
-          buttonText3=""
+          buttonText3="Make a Referral"
           buttonText2={"Request Information"}
           bgColor={"bg-[#6E8F56]"}
           bgTransparent={"bg-[#6E8F561A]"}
