@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-white border-[4px] border-t border-[#6E8F56] py-6">
+    <footer className="bg-white border-[4px] border-t-[#6E8F56] py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile and Tablet Layout */}
         <div className="lg:hidden">
