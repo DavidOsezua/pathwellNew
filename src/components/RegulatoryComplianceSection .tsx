@@ -5,9 +5,9 @@ const RegulatoryComplianceSection = () => {
       title: "Care Quality Commission (CQC)",
       description:
         "Registration and compliance with CQC standards for adult social care services.",
-      status: "In Progress",
-      statusColor: "#F9C31F",
-      statusBg: "#FEF3C7",
+      status: "Compliant",
+      statusColor: "#10B981",
+      statusBg: "#D1FAE5",
       titleColor: "#6E8F56",
     },
     {
@@ -60,18 +60,18 @@ const RegulatoryComplianceSection = () => {
           {complianceData.map((item) => (
             <div
               key={item.id}
-              className="bg-white relative rounded-xl p-6 shadow-sm border border-gray-200"
+              className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
             >
               {/* Header with Title and Status */}
-              <div className=" items-start mb-4">
+              <div className="flex justify-between items-start mb-4">
                 <h3
-                  className="text-lg mt-4 font-semibold"
+                  className="text-lg font-semibold"
                   style={{ color: item.titleColor }}
                 >
                   {item.title}
                 </h3>
                 <span
-                  className="px-4 py-1 absolute top-[5%] right-[3%] rounded-full text-xs font-semibold"
+                  className="px-3 py-1 rounded-full text-xs font-semibold"
                   style={{
                     color: item.statusColor,
                     backgroundColor: item.statusBg,
