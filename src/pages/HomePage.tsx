@@ -5,6 +5,7 @@ import Navbar2 from "../components/Navbar2";
 import ServiceCards from "../components/ServiceCards";
 import TestimonialBlock from "../components/TestimonialBlock";
 import ThreeColumnGrid from "../components/ThreeColumnGrid";
+import PoweredBySection from "../components/PoweredBySection";
 import { ourApproachData } from "../data/data";
 
 const HomePage = () => {
@@ -16,7 +17,7 @@ const HomePage = () => {
           subheading={
             "Support for Every Life Stage – Children, Adults, and Supported Living"
           }
-          imageUrl={"./home.jpg"}
+          imageUrl={"./home.webp"}
           title={""}
           features1={"CIC Compliant"}
           subFeature1="Community at core"
@@ -42,6 +43,7 @@ const HomePage = () => {
           textColor="text-[#6E8F56]"
         />
         <TestimonialBlock />
+        <PoweredBySection />
         <GetInTouch
           buttonText3="Make a Referral"
           buttonText2={"Request Information"}

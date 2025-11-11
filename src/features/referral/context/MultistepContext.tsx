@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, type ReactNode } from "react";
 
 //create the context
@@ -165,6 +166,7 @@ export const MultistepFormProvider: React.FC<MultistepFormProviderProps> = ({
 };
 
 // Custom Hook to use the context
+
 export const useMultistepForm = (): MultistepFormContextType => {
   const context = useContext(MultistepFormContext);
   if (!context) {
@@ -174,3 +176,4 @@ export const useMultistepForm = (): MultistepFormContextType => {
   }
   return context;
 };
+  

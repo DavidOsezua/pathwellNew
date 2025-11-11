@@ -20,7 +20,7 @@ const AboutPage = () => {
       <main>
         <HeroComponent
           subheading={"Trusted Housing-Based Support"}
-          imageUrl={"./about.jpg"}
+          imageUrl={"./about.webp"}
           title={"About Us"}
           features1={"CIC Compliant"}
           subFeature1="Community at core"

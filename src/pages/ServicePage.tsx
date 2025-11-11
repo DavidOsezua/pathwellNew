@@ -18,7 +18,7 @@ const ServicePage = () => {
       <main>
         <HeroComponent
           subheading={"Comprehensive Care Solutions for Vulnerable Individuals"}
-          imageUrl={"./services.png"}
+          imageUrl={"./services.webp"}
           title={"Our Services"}
           features1={"Child Care Placements"}
           features2={"Supported Living"}

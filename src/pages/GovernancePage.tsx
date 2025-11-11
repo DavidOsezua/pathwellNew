@@ -20,7 +20,7 @@ const GovernancePage = () => {
       <main>
         <HeroComponent
           subheading={"Governance Built on Transparency & Trust"}
-          imageUrl={"./governance.jpg"}
+          imageUrl={"./governance.webp"}
           title={"Governance"}
           features1={"CIC Compliant"}
           subFeature1="Community at core"

@@ -25,7 +25,7 @@ const CareersPage = () => {
           subheading={
             "Careers at PathWell: Be Part of a Diverse, Supportive Team"
           }
-          imageUrl={"./careers.jpg"}
+          imageUrl={"./careers.webp"}
           title={"Careers"}
           features1={"Meaningful Work"}
           features2={"Career Development"}
